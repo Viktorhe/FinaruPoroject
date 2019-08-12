@@ -1,0 +1,122 @@
+{
+    "user":[
+        {
+            "id":1,
+            "email":"admin@reforum.com",
+            "name":"admin",
+            "password":"admin"
+        },
+        {
+            "id":2,
+            "email":"train@reforum.com",
+            "name":"train",
+            "password":"train"
+        },
+        {
+            "id":3,
+            "email":"mod@reforum.com",
+            "name":"mod",
+            "password":"mod"
+        },
+        {
+            "id":4,
+            "email":"user@reforum.com",
+            "name":"user",
+            "password":"user"
+        },
+        {
+            "id":5,
+            "email":"test@reforum.com",
+            "name":"test",
+            "password":"test"
+        },
+        {
+            "id":6,
+            "email":"kepo@reforum.com",
+            "name":"kepo",
+            "password":"kepo"
+        }
+    ],
+    "threads":[
+        {
+            "id":1,
+            "name":"Thread for Admin",
+            "title":"Ask the Admin",
+            "category":["Discussion","Guidance","Pinned"],
+            "date":"2019-01-09T09:15:05.419Z",
+            "watched":1,
+            "origin":1
+        },
+        {
+            "id":2,
+            "name":"Thread for Javascript",
+            "title":"Thread for Javascript",
+            "category":["Discussion","Programming","Javascript"],
+            "date":"2019-02-09T09:15:05.419Z",
+            "watched":2,
+            "origin":2
+        },
+        {
+            "id":3,
+            "name":"Thread for React",
+            "title":"Thread for React",
+            "category":["Discussion","Programming","Javascript"],
+            "date":"2019-03-09T09:15:05.419Z",
+            "watched":2,
+            "origin":2
+        },
+        {
+            "id":4,
+            "name":"Thread for React Native",
+            "title":"Thread for React Native",
+            "category":["Discussion","Programming","Javascript","Android","IOS"],
+            "date":"2019-04-09T09:15:05.419Z",
+            "watched":2,
+            "origin":2
+        },
+        {
+            "id":5,
+            "name":"Thread for Android",
+            "title":"Thread for Android",
+            "category":["Programming","Android","Discussion"],
+            "date":"2019-05-09T09:15:05.419Z",
+            "watched":2,
+            "origin":3
+        },
+        {
+            "id":6,
+            "name":"Thread for IOS",
+            "title":"Thread for IOS",
+            "category":["Programming","IOS","Discussion"],
+            "date":"2019-06-09T09:15:05.419Z",
+            "watched":2,
+            "origin":3
+        }
+    ],
+    "comments":[
+        {
+            "id":1,
+            "title":"JakartaJS January Meetup with Bukalapak",
+            "date":"25 January 2019",
+            "participant":125
+        },
+        {
+            "id":2,
+            "title":"JakartaJS March Meetup with Hacktiv8",
+            "date":"29 March 2019",
+            "participant":138
+        },
+        {
+            "id":3,
+            "title":"JakartaJS May Meetup with Blibi",
+            "date":"31 May 2019",
+            "participant":119
+        },
+        {
+            "id":4,
+            "title":"JakartaJS July Meetup with Kumparan",
+            "date":"26 July 2019",
+            "participant":127
+        }
+    ]
+}
