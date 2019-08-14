@@ -3,36 +3,42 @@
         {
             "id":1,
             "email":"admin@reforum.com",
+            "avatar":"https://ui-avatars.com/api/?name=admin",
             "name":"admin",
             "password":"admin"
         },
         {
             "id":2,
             "email":"train@reforum.com",
+            "avatar":"https://ui-avatars.com/api/?name=train",
             "name":"train",
             "password":"train"
         },
         {
             "id":3,
             "email":"mod@reforum.com",
+            "avatar":"https://ui-avatars.com/api/?name=mod",
             "name":"mod",
             "password":"mod"
         },
         {
             "id":4,
             "email":"user@reforum.com",
+            "avatar":"https://ui-avatars.com/api/?name=user",
             "name":"user",
             "password":"user"
         },
         {
             "id":5,
             "email":"test@reforum.com",
+            "avatar":"https://ui-avatars.com/api/?name=test",
             "name":"test",
             "password":"test"
         },
         {
             "id":6,
             "email":"kepo@reforum.com",
+            "avatar":"https://ui-avatars.com/api/?name=kepo",
             "name":"kepo",
             "password":"kepo"
         }
@@ -40,55 +46,55 @@
     "threads":[
         {
             "id":1,
-            "name":"Thread for Admin",
             "title":"Ask the Admin",
             "category":["Discussion","Guidance","Pinned"],
             "date":"2019-01-09T09:15:05.419Z",
+            "message":"This is thread for asking me the admin your question about this forum.<br/>Please watch your manner when you post your comment.<br/>I will ban your account if you ignore this warning.",
             "watched":1,
             "origin":1
         },
         {
             "id":2,
-            "name":"Thread for Javascript",
             "title":"Thread for Javascript",
             "category":["Discussion","Programming","Javascript"],
             "date":"2019-02-09T09:15:05.419Z",
+            "message":"This is thread for asking me about Javascript.<br/>Please watch your manner when you post your comment.<br/>You are responsible for your comment.",
             "watched":2,
             "origin":2
         },
         {
             "id":3,
-            "name":"Thread for React",
             "title":"Thread for React",
             "category":["Discussion","Programming","Javascript"],
             "date":"2019-03-09T09:15:05.419Z",
+            "message":"This is thread for asking me about React.<br/>Please watch your manner when you post your comment.<br/>You are responsible for your comment.",
             "watched":2,
             "origin":2
         },
         {
             "id":4,
-            "name":"Thread for React Native",
             "title":"Thread for React Native",
             "category":["Discussion","Programming","Javascript","Android","IOS"],
             "date":"2019-04-09T09:15:05.419Z",
+            "message":"This is thread for asking me about React Native.<br/>Please watch your manner when you post your comment.<br/>You are responsible for your comment.",
             "watched":2,
             "origin":2
         },
         {
             "id":5,
-            "name":"Thread for Android",
             "title":"Thread for Android",
-            "category":["Programming","Android","Discussion"],
-            "date":"2019-05-09T09:15:05.419Z",
+            "category":["Discussion","Programming","Android"],
+            "date":"2019-04-10T09:15:05.419Z",
+            "message":"This is thread for asking me about Android.<br/>Please watch your manner when you post your comment.<br/>You are responsible for your comment.",
             "watched":2,
             "origin":3
         },
         {
             "id":6,
-            "name":"Thread for IOS",
             "title":"Thread for IOS",
-            "category":["Programming","IOS","Discussion"],
-            "date":"2019-06-09T09:15:05.419Z",
+            "category":["Discussion","Programming","IOS"],
+            "date":"2019-04-10T09:15:05.419Z",
+            "message":"This is thread for asking me about IOS.<br/>Please watch your manner when you post your comment.<br/>You are responsible for your comment.",
             "watched":2,
             "origin":3
         }
@@ -96,27 +102,51 @@
     "comments":[
         {
             "id":1,
-            "title":"JakartaJS January Meetup with Bukalapak",
-            "date":"25 January 2019",
-            "participant":125
+            "thread":1,
+            "index":1,
+            "user":2,
+            "message":"OK! I'll watch my manner.",
+            "date":"2019-01-10T09:15:05.419Z"
         },
         {
             "id":2,
-            "title":"JakartaJS March Meetup with Hacktiv8",
-            "date":"29 March 2019",
-            "participant":138
+            "thread":2,
+            "index":1,
+            "user":4,
+            "message":"What is your opinion about learning Javascript?<br/>I'm considering to learn javascript but I don't know if it is worthed.",
+            "date":"2019-02-10T09:15:05.419Z"
         },
         {
             "id":3,
-            "title":"JakartaJS May Meetup with Blibi",
-            "date":"31 May 2019",
-            "participant":119
+            "thread":3,
+            "index":1,
+            "user":4,
+            "message":"What is your opinion about learning React?<br/>I'm considering to learn react but I don't have any experience about Javascript.",
+            "date":"2019-02-10T09:15:05.419Z"
         },
         {
             "id":4,
-            "title":"JakartaJS July Meetup with Kumparan",
-            "date":"26 July 2019",
-            "participant":127
+            "thread":4,
+            "index":1,
+            "user":5,
+            "message":"What is the difference of React and React Native?<br/>I had experience of using React.<br/>Is it easier if I have experience of React?",
+            "date":"2019-03-10T09:15:05.419Z"
+        },
+        {
+            "id":5,
+            "thread":5,
+            "index":1,
+            "user":6,
+            "message":"First comment hahahaha!!!",
+            "date":"2019-04-11T09:15:05.419Z"
+        },
+        {
+            "id":6,
+            "thread":6,
+            "index":1,
+            "user":6,
+            "message":"First comment hahahaha!!!",
+            "date":"2019-04-11T09:18:05.419Z"
         }
     ]
 }
