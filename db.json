@@ -5,42 +5,48 @@
             "email":"admin@reforum.com",
             "avatar":"https://ui-avatars.com/api/?name=admin",
             "name":"admin",
-            "password":"admin"
+            "password":"admin",
+            "online":false
         },
         {
             "id":2,
             "email":"train@reforum.com",
             "avatar":"https://ui-avatars.com/api/?name=train",
             "name":"train",
-            "password":"train"
+            "password":"train",
+            "online":false
         },
         {
             "id":3,
             "email":"mod@reforum.com",
             "avatar":"https://ui-avatars.com/api/?name=mod",
             "name":"mod",
-            "password":"mod"
+            "password":"mod",
+            "online":false
         },
         {
             "id":4,
             "email":"user@reforum.com",
             "avatar":"https://ui-avatars.com/api/?name=user",
             "name":"user",
-            "password":"user"
+            "password":"user",
+            "online":false
         },
         {
             "id":5,
             "email":"test@reforum.com",
             "avatar":"https://ui-avatars.com/api/?name=test",
             "name":"test",
-            "password":"test"
+            "password":"test",
+            "online":false
         },
         {
             "id":6,
             "email":"kepo@reforum.com",
             "avatar":"https://ui-avatars.com/api/?name=kepo",
             "name":"kepo",
-            "password":"kepo"
+            "password":"kepo",
+            "online":false
         }
     ],
     "threads":[
