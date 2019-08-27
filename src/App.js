@@ -116,7 +116,7 @@ const Threads = ({ match }) => {
 }
 function App() {
   // eslint-disable-next-line
-  const [user, setUser] = useState({id:0,name:""})
+  const [user, setUser] = useState({id:1,name:""})
   // eslint-disable-next-line
   const [threads, setThreads] = useState([])
   // eslint-disable-next-line
@@ -125,20 +125,7 @@ function App() {
   return (
     <Provider store={Store} >
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+      
       <Router>
       
       <Route exact path="/" component={(user.id > 0)? Home : SignIn } />
