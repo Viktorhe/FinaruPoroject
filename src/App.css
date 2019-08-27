@@ -31,3 +31,27 @@
     transform: rotate(360deg);
   }
 }
+.header {
+  background-color: #1977e2;
+  margin: 5px;
+  height: 4vh;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  color: black;
+}
+.navbar>nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.transLink{
+  background: transparent;
+  text-decoration: none;
+  border: #282c34 !important;
+}

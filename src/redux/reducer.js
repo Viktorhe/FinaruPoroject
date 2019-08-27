@@ -16,7 +16,7 @@ const defaultState={
 const myReducer = (state=defaultState, action) => {
     switch(action.type){
         case USER:{
-            return {...state, user:action.payload}
+            return {...state, users:action.payload}
         }
         case LOGIN:{
             return {...state, user:action.payload}
