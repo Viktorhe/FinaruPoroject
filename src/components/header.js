@@ -4,10 +4,8 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-// import IconButton from '@material-ui/core/IconButton';
-// import MenuIcon from '@material-ui/icons/Menu';
 
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { connect } from 'react-redux'
 import '../App.css';
 
@@ -29,10 +27,15 @@ const Logout = () => {
   localStorage.clear()
   window.location.reload()
 }
+const clearThread = () =>{
+  console.log(localStorage.getItem('thread'))
+  localStorage.removeItem('thread')
+  console.log(localStorage.getItem('thread'))
+}
 
 const Header = ({logout_dispatch}) =>{
   const classes = useStyles();
-  
+  console.log('Mount Header')
   let token = localStorage.getItem('token')
   if(token)
     return (
@@ -40,7 +43,7 @@ const Header = ({logout_dispatch}) =>{
         <AppBar position="static">
           <Toolbar>
             <Typography variant="h6" className={classes.title}>
-              <Link className="transLink" to="/">React Forum</Link>
+              <Link className="transLink" to="/threads" onClick={ () => clearThread() }>React Forum</Link>
             </Typography>
             <Button color="inherit" onClick={ () => {
             logout_dispatch({})

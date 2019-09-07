@@ -9,6 +9,7 @@ const emptyUser={
 const defaultState={
     user:emptyUser,
     users:[],
+    thread: 0,
     threads:[],
     comments:[]
 }

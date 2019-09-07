@@ -15,7 +15,7 @@ import Container from '@material-ui/core/Container';
 import Logo from './logo192.png'
 import { connect } from 'react-redux'
 import { validateLogin, fetchThreads, fetchComments } from './redux/action'
-import { Redirect,  withRouter  } from "react-router-dom";
+import { withRouter  } from "react-router-dom";
 
 class SignIn extends Component {
   constructor(){
@@ -60,8 +60,8 @@ class SignIn extends Component {
   }
 
   render(){
-    let id = localStorage.getItem('id')
-    if (id) {
+    let token = localStorage.getItem('token')
+    if (token) {
       this.props.history.push('/threads')
     }
     return (
@@ -101,10 +101,6 @@ class SignIn extends Component {
               onChange={(e) => this.setState({password:e.target.value})
               }
             />
-            {/* <FormControlLabel
-              control={<Checkbox value="remember" color="primary" />}
-              label="Remember me"
-            /> */}
             <Button
               type="button"
               fullWidth
@@ -128,7 +124,9 @@ class SignIn extends Component {
 }
 const mapStateToProps = (state) => {
   return {
-    token_state: state.token
+    user: state.user,
+    threads: state.threads,
+    comments: state.comments
   }
 }
 

@@ -2,27 +2,6 @@ import axios from 'axios'
 import {USER,LOGIN,LOGOUT,
     THREADS,ADD_THREAD,EDIT_THREAD,DELETE_THREAD,
     COMMENTS,ADD_COMMENT,EDIT_COMMENT,DELETE_COMMENT} from './action-type'
-
-// export const validateLogin = (payload) =>{
-//     let options = {
-//         method:'GET',
-//         url:'https://my-json-server.typicode.com/Viktorhe/finaruporoject/user?email='+payload.email+"&password="+payload.password
-//     }
-//     return async (dispatch, getState) => {
-//         try{
-//             let curr = await getState()
-//             let state = []
-//             if(curr.user !== undefined){
-//                 state = curr.user
-//             }
-            
-//             let {data} = await axios(options)
-//             dispatch(login(data))
-//         }catch (error){
-//             console.error(error);
-//         }
-//     }
-// }
 export const actionErr = (payload) => {
     return {
         type: 'ERROR',
@@ -114,8 +93,6 @@ export const fetchThreads = () => {
                 let {data} = await axios(options)
                 state = [...data]
             }
-            // console.log("===========>",state);
-            // let {data} = await axios(options)
             dispatch(setThreads(state))
         }catch (error){
             console.error(error);
@@ -163,8 +140,6 @@ export const fetchComments = () => {
                 let {data} = await axios(options)
                 state = [...data]
             }
-            // console.log("===========>",state);
-            // let {data} = await axios(options)
             dispatch(setComments(state))
         }catch (error){
             console.error(error);
